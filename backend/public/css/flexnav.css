@@ -1,0 +1,433 @@
+/* Flexnav Base Styles */
+/* line 17, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Globals */
+/* line 26, ../sass/flexnav.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 30, ../sass/flexnav.scss */
+.flexnav {
+  *zoom: 1;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  max-height: 0;
+}
+/* line 38, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.flexnav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 37, ../sass/flexnav.scss */
+.flexnav.show {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  max-height: 1000px;
+}
+/* line 41, ../sass/flexnav.scss */
+.flexnav.one-page {
+  position: fixed;
+  top: 50px;
+  right: 5%;
+  max-width: 200px;
+}
+/* line 48, ../sass/flexnav.scss */
+.flexnav li {
+  font-size: 100%;
+  position: relative;
+}
+/* line 52, ../sass/flexnav.scss */
+.flexnav li a {
+	position: relative;
+	display: block;
+	padding: 7px 5px;
+	z-index: 2;
+	overflow: hidden;
+	color: #48221e;
+	background: #f7f7f7;
+	font-family: 'latoregular';
+	font-size: 15px;
+	text-decoration:none;
+}
+/* line 62, ../sass/flexnav.scss */
+.flexnav li ul {
+  width: 100%;
+  display: none;
+}
+/* line 66, ../sass/flexnav.scss */
+.flexnav li ul li {
+  float: none;
+  width: 100%;
+}
+/* line 70, ../sass/flexnav.scss */
+.flexnav li ul li a {
+  display: block;
+  background: #b2b2af;
+}
+/* line 74, ../sass/flexnav.scss */
+.flexnav ul li ul li a {
+  background: #bfbfbc;
+}
+/* line 77, ../sass/flexnav.scss */
+.flexnav ul li ul li ul li a {
+  background: #cbcbc9;
+}
+/* line 80, ../sass/flexnav.scss */
+.flexnav .touch-button {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: #acaca1;
+  background: rgba(0, 0, 0, 0.075);
+  text-align: center;
+}
+/* line 91, ../sass/flexnav.scss */
+.flexnav .touch-button:hover {
+  cursor: pointer;
+}
+/* line 94, ../sass/flexnav.scss */
+.flexnav .touch-button .navicon {
+  position: relative;
+  top: 1.4em;
+  font-size: 12px;
+  color: #666;
+}
+
+/* line 102, ../sass/flexnav.scss */
+.menu-button {
+  position: relative;
+  display: block;
+  color: #222222;
+  cursor: pointer;
+  width: 50px;
+  height: 42px;
+  border: solid 1px #ddd;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+  background: #48221e;
+  float: right;
+  margin-right:10px;
+}
+/* line 111, ../sass/flexnav.scss */
+.menu-button.one-page {
+  position: fixed;
+  top: 0;
+  right: 5%;
+  padding-right: 45px;
+}
+/* line 118, ../sass/flexnav.scss */
+.menu-button .touch-button {
+  background: #FFF;
+  top: 0;
+  right: 0;
+  display: block;
+  text-align: center;
+  border: solid 1px;
+  position: relative;
+  margin-top: 9px;
+  border: none;
+  height: 2px;
+}
+/* line 129, ../sass/flexnav.scss */
+.menu-button .touch-button .navicon {
+  font-size: 16px;
+  position: relative;
+  top: 1em;
+  color: #666;
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  /* line 139, ../sass/flexnav.scss */
+  body.one-page {
+    padding-top: 70px;
+  }
+
+  /* line 142, ../sass/flexnav.scss */
+  .flexnav {
+    overflow: visible;
+    max-height: 1000px;
+  }
+  /* line 146, ../sass/flexnav.scss */
+  .flexnav.one-page {
+    top: 0;
+    right: auto;
+    max-width: 1080px;
+  }
+  /* line 151, ../sass/flexnav.scss */
+  .flexnav li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    padding-top: 55px;
+    margin: 0 6px;
+  }
+
+.flexnav li:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f39f1d;
+    top: 0;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+	opacity:0;
+	height:0;
+	left:0;
+}
+  .flexnav li.active:before, .flexnav li:hover:before {
+	  height:100%;
+	  opacity:1;
+}
+
+  /* line 159, ../sass/flexnav.scss */
+  .flexnav li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    display: block;
+    top: 3.1em;
+    position: absolute;
+  }
+  /* line 168, ../sass/flexnav.scss */
+  .flexnav.lg-screen li:hover > ul, .flexnav.sm-screen li:hover > ul {
+    display: none;
+  }
+  /* line 171, ../sass/flexnav.scss */
+  .flexnav li a {
+    border-bottom: none;
+  }
+  /* line 175, ../sass/flexnav.scss */
+  .flexnav li > ul {
+    position: absolute;
+    top: auto;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 1px;
+    z-index: 1;
+  }
+  /* line 184, ../sass/flexnav.scss */
+  .flexnav li ul li ul {
+    top: 0;
+  }
+  /* line 187, ../sass/flexnav.scss */
+  .flexnav li ul li a {
+    border-bottom: none;
+  }
+  /* line 190, ../sass/flexnav.scss */
+  .flexnav li ul.open {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+  }
+  /* line 196, ../sass/flexnav.scss */
+  .flexnav li ul.open ul.open {
+    margin-left: 100%;
+    top: 0;
+  }
+  /* line 201, ../sass/flexnav.scss */
+  .flexnav ul li:hover ul {
+    margin-left: 100%;
+    top: 0;
+  }
+
+  /* line 206, ../sass/flexnav.scss */
+  .menu-button {
+    display: none;
+  }
+}
+/* line 212, ../sass/flexnav.scss */
+.oldie body.one-page {
+  padding-top: 70px;
+}
+/* line 215, ../sass/flexnav.scss */
+.oldie .flexnav {
+  overflow: visible;
+  max-height: 1000px;
+}
+/* line 219, ../sass/flexnav.scss */
+.oldie .flexnav.one-page {
+  top: 0;
+
+  right: auto;
+  max-width: 1080px;
+}
+/* line 224, ../sass/flexnav.scss */
+.oldie .flexnav li {
+  position: relative;
+  list-style: none;
+  float: left;
+  display: block;
+  background-color: #a6a6a2;
+  width: 20%;
+  min-height: 50px;
+}
+/* line 233, ../sass/flexnav.scss */
+.oldie .flexnav li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  display: block;
+  top: 3.1em;
+  position: absolute;
+}
+/* line 241, ../sass/flexnav.scss */
+.oldie .flexnav li:hover > ul li {
+  width: 100%;
+}
+/* line 246, ../sass/flexnav.scss */
+.oldie .flexnav.lg-screen li:hover > ul, .oldie .flexnav.sm-screen li:hover > ul {
+  display: none;
+}
+/* line 249, ../sass/flexnav.scss */
+.oldie .flexnav li a {
+  border-left: 1px solid #acaca1;
+  border-bottom: none;
+}
+/* line 253, ../sass/flexnav.scss */
+.oldie .flexnav li > ul {
+  position: absolute;
+  top: auto;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  height: 1px;
+  z-index: 1;
+}
+/* line 262, ../sass/flexnav.scss */
+.oldie .flexnav li ul li ul {
+  top: 0;
+}
+/* line 265, ../sass/flexnav.scss */
+.oldie .flexnav li ul li a {
+  border-bottom: none;
+}
+/* line 268, ../sass/flexnav.scss */
+.oldie .flexnav li ul.open {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+/* line 274, ../sass/flexnav.scss */
+.oldie .flexnav li ul.open ul.open {
+  margin-left: 100%;
+  top: 0;
+}
+/* line 279, ../sass/flexnav.scss */
+.oldie .flexnav ul li:hover ul {
+  margin-left: 100%;
+  top: 0;
+}
+/* line 284, ../sass/flexnav.scss */
+.oldie .menu-button {
+  display: none;
+}
+/* line 287, ../sass/flexnav.scss */
+.oldie.ie7 .flexnav li {
+  width: 19.9%;
+}
+.menu-button .touch-button:before,.menu-button .touch-button:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    left: 0;
+}
+.menu-button .touch-button:before{
+    top: -8px;
+}
+.menu-button .touch-button:after {
+    bottom: -8px;
+}

@@ -1,0 +1,1 @@
+window.location.href="<?php echo URL::to('login'); ?>";

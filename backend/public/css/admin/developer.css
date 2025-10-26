@@ -1,0 +1,148 @@
+.mws-panel-body .mws-table tbody tr:nth-child(2n) td tr  {
+	background-color: #fafafa;
+}
+.fa.fa-download{
+	font-size:20px;
+	color:white;
+	margin-top:3px;
+}
+.blue-icon{
+	color: skyblue;
+}
+.green-icon{
+	color: green;
+}
+.red-icon{
+	color: red;
+}
+.inner-spacer{
+	background:#fff;
+}
+
+.no-records{
+ text-align:center;
+}
+.align{
+margin-left:5px;
+}
+.mws-gallery > li {
+ margin-bottom: 0px !important;
+}
+
+
+/*  admin pricing page addons css */
+
+.mws-form .mws-form-item .InputAddOn-field {
+    width: 100% !important;
+}
+.mws-form .mws-form-item .month {
+    width: 100% !important;
+}
+
+.InputAddOn {
+display: flex;
+width:55%;
+}
+
+.InputAddOn-field:not(:first-child) {
+border-left: 0;
+}
+
+.InputAddOn-item {
+background-color: rgba(147, 128, 108, 0.1);
+color: #666666;
+font: inherit;
+font-weight: normal;
+}
+
+.InputAddOn-field,
+.InputAddOn-item {
+border: 1px solid rgba(147, 128, 108, 0.25);
+padding: 0.3em 0.70em;
+}
+
+.InputAddOn-field:first-child,
+.InputAddOn-item:first-child {
+border-radius: 2px 0 0 2px;
+}
+.InputAddOn-field:last-child,
+.InputAddOn-item:last-child {
+border-radius: 0 2px 2px 0;
+}
+/*  admin pricing page addons css end here */
+
+.dropdown-header{
+	display:block;
+	padding:3px 20px;
+	font-size:12px;
+	line-height:1.42857143;
+	color:#777;
+	white-space:nowrap;
+	font-weight:bold;
+ }
+
+.chosen-container ul li{
+ color:black !important;
+ margin: 0px 0px !important;
+ font-size:13px;
+}
+.chosen-container ul li span{
+ float:none !important;
+ font-size:13px;
+}
+
+.restaurant-menu-item {
+    background: none repeat scroll 0 0 #fff;
+    margin-bottom: 15px;
+ }
+.menu-price {
+    margin-top: 10px;
+}
+
+
+#map {
+		height: 100%;
+	}
+	.controls {
+	  margin-top: 10px;
+	  border: 1px solid transparent;
+	  border-radius: 2px 0 0 2px;
+	  box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  height: 32px;
+	  outline: none;
+	  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	}
+
+	#pac-input {
+	  background-color: #fff;
+	  font-family: Roboto;
+	  font-size: 15px;
+	  font-weight: 300;
+	  margin-left: 12px;
+	  padding: 0 11px 0 13px;
+	  text-overflow: ellipsis;
+	  width: 300px;
+	  top:11px !important;
+	}
+
+	#pac-input:focus {
+	  border-color: #4d90fe;
+	}
+
+	.pac-container {
+	  font-family: Roboto;
+	}
+
+	#type-selector {
+	  color: #fff;
+	  background-color: #4d90fe;
+	  padding: 5px 11px 0px 11px;
+	}
+
+	#type-selector label {
+	  font-family: Roboto;
+	  font-size: 13px;
+	  font-weight: 300;
+	}
+			
